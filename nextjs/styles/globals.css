@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
 html,
-body {
-  font-family: 'Open Sans', sans-serif;
+body,p{
+  font-family: 'Open Sans', sans-serif!important;
+}
+p {
+  font-size: 1.8rem;
 }

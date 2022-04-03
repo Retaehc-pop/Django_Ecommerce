@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Home({ posts }) {
   const classes = useStyles();
-  console.log(posts);
   return (
     <>
       <Header />
