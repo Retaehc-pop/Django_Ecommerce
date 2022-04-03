@@ -28,5 +28,8 @@ class ProductSpecificationValueInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-  inlines = [ProductImageInline,ProductSpecificationValueInline]
+  inlines = [
+        ProductSpecificationValueInline,
+        ProductImageInline,
+    ]
   
