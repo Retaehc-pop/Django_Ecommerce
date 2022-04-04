@@ -18,7 +18,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Next.js Material-UI Example</title>
+        <title>test</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

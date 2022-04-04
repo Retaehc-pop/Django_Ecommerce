@@ -1,10 +1,3 @@
-from decimal import MAX_EMAX
-from itertools import product
-from pyexpat import model
-from re import T
-from tabnanny import verbose
-from typing import OrderedDict
-import black
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -68,7 +61,7 @@ class ProductSpecification(models.Model):
 
 class Product(models.Model):
   product_type = models.ForeignKey(ProductTypes,on_delete=models.RESTRICT)
-  Categoriy = models.ForeignKey(Category,on_delete=models.RESTRICT)
+  Category = models.ForeignKey(Category,on_delete=models.RESTRICT)
   title = models.CharField(
     verbose_name=_("Title"),
     help_text=_("Required"),

@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ('is_active', models.BooleanField(default=True, help_text='Change the visibility of the product', verbose_name='Product visibility')),
                 ('created', models.DateTimeField(auto_now_add=True, verbose_name='Created at')),
                 ('updated', models.DateTimeField(auto_now=True, verbose_name='Updated at')),
-                ('Categoriy', models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, to='store.category')),
+                ('Category', models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, to='store.category')),
             ],
             options={
                 'verbose_name': 'Product',
