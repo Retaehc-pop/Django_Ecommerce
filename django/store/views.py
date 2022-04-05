@@ -19,9 +19,9 @@ class CategoryItemView(generics.ListAPIView):
 
     def get_queryset(self):
         return models.Product.objects.filter(
-            category__in=Category.objects.get(slug=self.kwargs["slug"]).get_descendants(include_self=True)
+            Category__in=Category.objects.get(slug=self.kwargs["slug"]).get_descendants(include_self=True)
         )
 
 class CategoryListView(generics.ListAPIView):
-    queryset = Category.objects.filter(level=1)
+    queryset = Category.objects.all()
     serializer_class = CategorySerializer
